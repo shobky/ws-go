@@ -1,4 +1,4 @@
-var socket = new WebSocket("ws://ws-giggss.onrender.com/ws")
+var socket = new WebSocket("wss://ws-giggss.onrender.com/ws")
 
 let connect = (cb, handleHistory) => {
     console.log('connecting..')
