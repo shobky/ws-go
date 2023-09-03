@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/shobky/ws-go/pkg/ws"
+	"github.com/shobky/ws-go/tree/master/pkg/ws"
 )
 
 func serveWS(pool *ws.Pool, w http.ResponseWriter, r *http.Request) {

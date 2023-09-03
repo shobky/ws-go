@@ -1,4 +1,4 @@
-module github.com/shobky/ws-go
+module github.com/shobky/ws-go/tree/master
 
 go 1.20
 
