@@ -22,7 +22,6 @@ let connect = (cb, handleHistory) => {
 }
 
 let sendmsg = (msg) => {
-    console.log("sending: ", msg)
     socket.send(msg)
 }
 

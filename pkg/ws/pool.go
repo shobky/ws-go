@@ -22,6 +22,7 @@ func (p *Pool) Start() {
 	for {
 		select {
 		case client := <-p.Register:
+			client.ID = len(p.Clients)
 			p.Clients[client] = true
 			fmt.Println("size of conn pool:", len(p.Clients))
 			for client, _ := range p.Clients {
@@ -40,7 +41,7 @@ func (p *Pool) Start() {
 		case message := <-p.Brodcast:
 			fmt.Println("broadcasting to all clients")
 			for client, _ := range p.Clients {
-				fmt.Println(client)
+				fmt.Println("client", client)
 				if err := client.Conn.WriteJSON(message); err != nil {
 					fmt.Println(err)
 					return
