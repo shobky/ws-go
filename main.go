@@ -10,6 +10,7 @@ import (
 
 func serveWS(pool *ws.Pool, w http.ResponseWriter, r *http.Request) {
 	fmt.Println("ws endpoint hit")
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 
 	conn, err := ws.Upgrade(w, r)
 
