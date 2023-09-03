@@ -1,4 +1,4 @@
-var socket = new WebSocket("ws://192.168.1.5:8080/ws")
+var socket = new WebSocket("ws://192.168.1.4:8080/ws")
 
 let connect = (cb, handleHistory) => {
     console.log('connecting..')

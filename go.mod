@@ -1,4 +1,4 @@
-module github.com/shobky/ws
+module github.com/shobky/ws-go
 
 go 1.20
 

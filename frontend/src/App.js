@@ -1,4 +1,3 @@
-import './App.css';
 import { useEffect, useState } from 'react'
 import { connect } from './api/connect';
 import History from './components/history';
@@ -26,7 +25,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello world!.</h1>
       <History history={history} />
       <Box />
     </div>
